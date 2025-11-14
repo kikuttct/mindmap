@@ -868,8 +868,8 @@ document.addEventListener('keydown',(e)=>{
       const li = target.closest('li');
       const fileName = li.querySelector('.file-name').textContent;
       
-      const password = prompt(`確定要刪除「${fileName}」嗎？\n請輸入密碼 'del' 來確認：`);
-      if (password !== 'del') {
+      const password = prompt(`確定要刪除「${fileName}」嗎？\n請輸入密碼來確認：`);
+      if (password !== 'hdps') {
         if (password !== null) { showNotification('密碼錯誤，取消刪除。', true); }
         return;
       }
